@@ -1,0 +1,41 @@
+/* Desc.css */
+
+/* Styling for the main food card */
+.food-card {
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+ 
+  /* Styling for review cards */
+  .review-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 2px 2px 2px 2px black;
+      transition: transform 0.2s ease-in-out;
+  }
+  
+  .review-card:hover {
+
+    box-shadow: 2px 2px black;
+
+   }
+  
+  /* Text Styling */
+  .text-primary {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .text-success {
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  .text-muted {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
