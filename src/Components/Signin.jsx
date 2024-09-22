@@ -20,7 +20,6 @@ const SignIn = () => {
     }
 
     try {
-      // Sending a POST request with user data
       const response = await axios.post('http://localhost:4000/api/v1/users', {
         name,
         email,
@@ -28,13 +27,11 @@ const SignIn = () => {
       });
 
       if (response.status ===200) {
-        // Handle success (e.g., navigate to the login page)
         navigate('/');
       } else {
         setError(response.data.error || 'Unexpected response.');
       }
     } catch (error) {
-      // If there's an error, display the error message
       if (error.response) {
         setError(error.response.data.error || 'Sign-in failed. Please try again.');
       } else if (error.request) {

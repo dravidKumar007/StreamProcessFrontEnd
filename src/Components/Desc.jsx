@@ -19,6 +19,8 @@ const Desc = () => {
       });
 
     const handlePopState = () => {
+
+      console.log('sending request')
       const email = localStorage.getItem('email') || "logs@example.com";
       axios.post('http://localhost:5000/kafka/publish', {
         email: email,
